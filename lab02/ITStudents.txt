@@ -1,0 +1,10 @@
+1234:XYZ:ICT:CCE:A:80:60:70
+2345:ABC:Information Technology:CCE:B:75:65:55
+3456:PQR:ICT:Information Technology:A:90:85:80
+4567:LMN:ECE:Information Technology:C:70:75:80
+5678:DEF:ICT:CCE:A:60:65:70
+6789:GHI:Information Technology:CCE:B:85:80:75
+7890:JKL:ICT:Information Technology:A:90:95:85
+8901:MNO:ECE:CCE:C:70:65:60
+9012:PST:ICT:Information Technology:B:88:92:78
+0123:QWE:Information Technology:CCE:A:80:85:88
