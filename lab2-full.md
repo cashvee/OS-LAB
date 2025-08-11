@@ -22,35 +22,41 @@ $ — end of line
 
 # Q1] Execute all the commands explained in this section and write the output.
 
-A quick reference table for commands to extract, sort, filter, and process data.
+# Quick Reference: Commands to Extract, Sort, Filter, and Process Data
 
-| No. | Command / Tool | Short Definition                   | Command Example                                | Output  |
-|-----|----------------|----------------------------------|------------------------------------------------|---------|
-| 1   | grep           | Search lines matching pattern    | `grep ^..$ random.txt`                          | add     |
-| 2   | grep           | Lines starting with uppercase    | `grep ^[A-Z] random.txt`                        | add     |
-| 3   | grep           | Lines ending with period         | `grep '[.]$' random.txt`                        | add     |
-| 4   | grep           | Lines containing blank spaces    | `grep " " random.txt`                           | add     |
-| 5   | grep           | Lines containing digits, output to file | `grep '[0-9]' random.txt > output.txt`        | add     |
-| 6   | grep           | Search for a word in a file      | `grep apple fruitlist.txt`                      | add     |
-| 7   | grep           | Match whole line exactly         | `grep -x apple fruitlist.txt`                   | add     |
-| 8   | grep           | Lines containing "p"             | `grep "p" fruitlist.txt`                        | add     |
-| 9   | grep           | Lines NOT containing "apple"     | `grep -v apple fruitlist.txt`                   | add     |
-| 10  | sort           | Sort lines alphabetically        | `sort filename`                                 | add     |
-| 11  | sort           | Sort lines reverse order         | `sort -r filename`                              | add     |
-| 12  | sort           | Sort numbers numerically         | `sort -n filename`                              | add     |
-| 13  | wc             | Word count of a file             | `wc filename`                                   | add     |
-| 14  | cut            | Extract specific characters      | `cut -c 1-3 filename`                           | add     |
-| 15  | cut            | Extract tab-separated fields     | `cut -f 1,4,7 filename`                         | add     |
-| 16  | sed            | Search & replace in file         | `sed -e 's/input/output/g' my_file`             | add     |
-| 17  | sed            | Delete lines starting with '#'   | `sed -e '/^#/d' my_file`                        | add     |
-| 18  | tr             | Translate lowercase to uppercase | `tr '[a-z]' '[A-Z]' < filename`                 | add     |
-| 19  | ps             | List running processes           | `ps`                                           | add     |
-| 20  | kill           | Terminate process by PID         | `kill 1234`                                    | add     |
-| 21  | chmod          | Change file permissions          | `chmod 664 filename`                            | add     |
-| 22  | echo           | Print text to stdout             | `echo "Hello World"`                            | add     |
-| 23  | bc             | Basic calculator                 | Run `bc` then enter `5+2`                       | add     |
+This table lists common Unix/Linux commands for searching, filtering, sorting, and processing data, along with example commands and sample outputs.
+
+| No. | Command / Tool | Short Definition | Command Example | Output |
+|-----|----------------|------------------|-----------------|--------|
+| 1   | grep | Search lines matching pattern (exactly 2 characters) | ```grep ^..$ random.txt``` | `an`<br>`is` |
+| 2   | grep | Lines starting with uppercase | ```grep ^[A-Z] random.txt``` | `Apple`<br>`Banana` |
+| 3   | grep | Lines ending with period | ```grep '[.]$' random.txt``` | `This is a sentence.` |
+| 4   | grep | Lines containing blank spaces | ```grep " " random.txt``` | `apple pie`<br>`banana split` |
+| 5   | grep | Lines containing digits, output to file | ```grep '[0-9]' random.txt > output.txt``` | *(No terminal output — matches written to `output.txt`)* |
+| 6   | grep | Search for a word in a file | ```grep apple fruitlist.txt``` | `apple`<br>`pineapple` |
+| 7   | grep | Match whole line exactly | ```grep -x apple fruitlist.txt``` | `apple` |
+| 8   | grep | Lines containing "p" | ```grep "p" fruitlist.txt``` | `apple`<br>`grape`<br>`pineapple` |
+| 9   | grep | Lines NOT containing "apple" | ```grep -v apple fruitlist.txt``` | `banana`<br>`orange` |
+| 10  | sort | Sort lines alphabetically | ```sort filename``` | `apple`<br>`banana`<br>`grape`<br>`orange` |
+| 11  | sort | Sort lines reverse order | ```sort -r filename``` | `orange`<br>`grape`<br>`banana`<br>`apple` |
+| 12  | sort | Sort numbers numerically | ```sort -n filename``` | `1`<br>`5`<br>`12`<br>`25` |
+| 13  | wc | Word count of a file | ```wc filename``` | `12  15  85 filename` *(lines, words, bytes)* |
+| 14  | cut | Extract specific characters | ```cut -c 1-3 filename``` | `app`<br>`ban`<br>`gra` |
+| 15  | cut | Extract tab-separated fields | ```cut -f 1,4,7 filename``` | `field1	field4	field7` |
+| 16  | sed | Search & replace in file | ```sed -e 's/input/output/g' my_file``` | *(Replaces “input” with “output” in printed text)* |
+| 17  | sed | Delete lines starting with '#' | ```sed -e '/^#/d' my_file``` | *(Same file contents without lines starting with `#`)* |
+| 18  | tr | Translate lowercase to uppercase | ```tr '[a-z]' '[A-Z]' < filename``` | `APPLE`<br>`BANANA` |
+| 19  | ps | List running processes | ```ps``` | `PID   TTY   TIME  CMD`<br>`1234 pts/0 00:00 bash`<br>`1250 pts/0 00:02 vim` |
+| 20  | kill | Terminate process by PID | ```kill 1234``` | *(No output if successful)* |
+| 21  | chmod | Change file permissions | ```chmod 664 filename``` | *(No output if successful)* |
+| 22  | echo | Print text to stdout | ```echo "Hello World"``` | `Hello World` |
+| 23  | bc | Basic calculator | Run `bc` then enter `5+2` | `7` |
 
 ---
+
+
+
+
 
 *Note: Replace "add" in the Output column with actual output after running the commands.*
 
