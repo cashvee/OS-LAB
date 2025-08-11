@@ -49,13 +49,13 @@ This table lists common Unix/Linux commands for searching, filtering, sorting, a
 # Q2] Write grep commands to do the following activities:
 
 ## CONTENT IN random.txt file:
-Hi, My name is cat 
-im small12.
-Not a doG
-I am a cat.
-Meow yes
-OK
-yaY
+Hi, My name is cat   
+im small12.  
+Not a doG  
+I am a cat.  
+Meow yes  
+OK  
+yaY  
 
 ### 1] To select the lines from a file that have exactly two characters:
 #### COMMAND: `grep ^..$ random.txt`  
